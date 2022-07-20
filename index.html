@@ -5,8 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link css to html -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Home Page Navbar -->
+    <div class="navbar">
+        <div id="navLeft">
+            <div><img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.3" alt=""></div>
+            <div>Browse Fundraisers</div>
+            <div class="dropDownButton">
+                <div onclick="navDropFunc()" class="dropDown">Fundraise For <span id="downArrow"></span></div>
+                <div id="myNavDrop" class="navDrop-content">
+                    <a href="#">Medical Treatment</a>
+                    <a href="#">NGO/ Charity</a>
+                    <a href="#">Other Cause</a>
+                </div>
+            </div>
+            <div class="navHiw"><a href="howItWorks.html">How It Works</a> </div>
+            <div>|</div>
+            <div id="navSearch">
+                <div><img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt=""></div>
+                <div>Search</div>
+            </div>
+
+        </div>
+        <div id="navRight">
+            <div>
+               <div id="navWhatsapp">
+                <img src="https://www.cppng.com/file/thumb/2020-06/77220-scalable-vector-graphics-logo-whatsapp-icon-thumb.png" alt="">
+                <h5>Chat</h5>
+               </div>
+            </div>
+
+            <div>
+                <button><a href="startFundraiser.html"> Start a Fundraiser</a></button>
+            </div>
+            <div id="showLogin">
+                Sign In
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign in Page -->
+    <div class="popUp">
+        <div id="popUpTop">
+            <h2>Login</h2>
+            <div class="closeButton">&times;</div>
+
+        </div>
+        
+        <div class="form">
+            <div class="popUpLeft">
+                <input type="email" type="number" placeholder="Email/ Mobile Number">
+                <br>
+                <button>Get OTP</button>
+                <h5>Login via Password</h5>
+                <p>By continuing you agree to our <span class="textColor">Terms of Service</span> and <span class="textColor"> Privacy Policy</span></p>
+                <h3>Want to start a fundraiser? <span class="textColor"> Click here</span></h3>
+            </div>
+            <div class="pupUpRight">
+                <div id="googleButton">
+                    <img src="https://logosandtypes.com/wp-content/uploads/2020/11/Google.png" alt="">
+                    <h4>Sign in with Google</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
+
+
 </body>
 </html>
+
+
+<script src="script.js"></script>
+
+
+
