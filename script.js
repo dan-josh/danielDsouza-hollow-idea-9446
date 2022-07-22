@@ -27,6 +27,8 @@ window.onclick = function(event) {
 
 
 
+
+
 // botton slider of hiw
 
 
@@ -58,4 +60,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-  
+
+

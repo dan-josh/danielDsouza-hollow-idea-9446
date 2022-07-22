@@ -14,20 +14,55 @@
         <div id="sfPurpose">
             <div>Purpose of raising funds</div>
             <div>Medical Treatment</div>
+
         </div>
-        <input type="text" placeholder="Name">
+        <form id="signup-form">
+        <input id="inputName" type="text" placeholder="Name">
         <p>Name as mentioned in your Aadhar card</p>
-        <input type="email" placeholder="Email Address">
+        <input id="inputEmail" type="email" placeholder="Email Address">
         <br>
-        <input type="password" placeholder="Create Password">
+        <input id="inputPass" type="password" placeholder="Create Password">
         <br>
-        <input type="number" name="" id="" placeholder="Mobile">
+        <input id="inputNumber" type="number" name=""  placeholder="Mobile">
         <p>Please enter a valid number</p>
 
         <h3>Already have an account? <span class="textColor">Login</span></h3>
-        <button>Next</button>
+        <button id="submit">Next</button>
+
+        </form>
+        
     </div>
     <p id="sfLast">Are you an NGO? <span class="textColor">Apply Here</span></p>
     
 </body>
 </html>
+
+<script>
+    document.getElementById("submit").addEventListener("click", funbutton);
+    let signupArr=JSON.parse(localStorage.getItem("signup")) || [];
+    function funbutton(){
+        event.preventDefault();
+        // console.log("click success")
+        let obj={
+            iemail: document.querySelector("#inputEmail").value,
+            ipass: document.querySelector("#inputPass").value,
+            iname: document.querySelector("#inputName").value,
+            inum: document.querySelector("#inputNumber").value
+        }
+
+
+        if(obj.iemail=="" || obj.ipass=="" || obj.iname=="" || obj.inum=="" ){
+            alert("Complete the details")
+            // console.log("done");
+        }else{
+            signupArr.push(obj);
+            // console.log(signupArr);
+            localStorage.setItem("signup",JSON.stringify(signupArr));
+
+        }
+
+
+    }
+        
+    
+</script>
