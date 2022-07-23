@@ -93,8 +93,8 @@ body{
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #444444;
-    position: fixed;
-    top: 40px;
+    position: relative;
+    top: 12px;
     margin-left: 6px;
 
 }
@@ -537,8 +537,115 @@ body{
 }
 
 #multiple-carousal{
-    height: 500px;
-    border: 1px solid red;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-mc-inner-container{
+    /* border: 1px solid blue; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 28%;
+    border-radius: 10px;
+}
+
+.home-mc-inner-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mc-button-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#mc-donate{
+    background-color: #01bfbd;
+    border: none;
+}
+
+#mc-donate h4{
+    color: white;
+}
+
+.mc-button{
+    border: 1px solid #4285f4;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+    height: 40px;
+}
+
+.mc-correct{
+    /* border: 1px solid yellow; */
+    padding: 20px;
+    
+}
+
+.mc-button img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+.home-mc-div-container{
+    display: flex;
+    margin-top: -20px;
+    justify-content: space-between;
+}
+
+.home-mc-div-container>div{
+    display: flex;
+    align-items: center;
+
+}
+
+.home-mc-div-container img{
+    width: 20px;
+    height: 20px;
+    /* margin-left: 10px; */
+    margin-right: 5px;
+}
+
+.home-mc-div-container p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.home-mc-amount{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-left: 20px; */
+}
+
+.home-mc-by{
+    display: flex;
+    /* margin: 20px; */
+}
+
+.home-mc-by>p{
+    color: #777777;
+    font-weight: 400;
+    /* margin-left: 10px; */
+}
+
+.home-mc-inner-container>h3{
+    /* margin: 20px; */
+}
+
+.home-mc-inner-container>img{
+    width: 100%;
 }
 
 #trending-fundraisers-bottom{
@@ -1003,11 +1110,27 @@ img {vertical-align: middle;}
 }
 
 #home-featuredin{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 80%;
     height: 200px;
     margin: auto;
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-featuredin-text{
+color: #444444;
+margin: auto;
+text-align: center;
+margin-bottom: -100px;
+margin-top: 100px;
+}
+
+#home-featuredin img{
+width: 100px;
+
 }
 
 
@@ -1103,3 +1226,20 @@ img {vertical-align: middle;}
 }
 
 /* footer end */
+
+.supportButton{
+    width: 150px;
+    height: 50px;
+    background-color: #01bfbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+.supportButton h4{
+    color: white;
+}

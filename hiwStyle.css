@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -93,8 +94,8 @@ body{
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 5px solid #444444;
-    position: fixed;
-    top: 40px;
+    position: relative;
+    top: 12px;
     margin-left: 6px;
 
 }
@@ -525,7 +526,7 @@ h1{
     width: 100%;
     height: 150px;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
 
 }
@@ -621,9 +622,7 @@ h1{
     margin-top: 50px;
 }
 
-.hiw-fundSteps{
-    /* border: 1px solid red; */
-}
+
 
 .hiw-startFundHead-main img{
     width: 65px;
@@ -754,7 +753,7 @@ h1{
 /* slides automatic */
 
 .hiwSlideBar{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 300px;
     /* display: none; */
 }
@@ -928,10 +927,9 @@ h1{
 
 /* slide bottom */
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+/* * {box-sizing: border-box} */
 .mySlides {display: none}
-img {vertical-align: middle;}
+
 
 .slide{
     /* border: 1px solid red; */
@@ -1071,10 +1069,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+
 
 #hiw-bottom-slider>h1{
     color: #444444;
@@ -1083,13 +1078,14 @@ img {vertical-align: middle;}
 #hiw-bottom-slider>p{
     color: #777777;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* footer part start */
 
 .footer{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background-color: #055453;
     margin-top: 30px;
@@ -1111,13 +1107,11 @@ img {vertical-align: middle;}
     
 }
 
-#footertop>div:nth-child(1){
-    /* background-color: yellow; */
 
-}
 
 #footerlogo{
    border-bottom: 0.1pt solid rgba(43, 210, 160, 0.401); 
+
 }
 
 #footerlogo img{
@@ -1161,6 +1155,7 @@ img {vertical-align: middle;}
     text-decoration: none;
     display: block;
     padding-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #footer-banking-logo{
@@ -1178,3 +1173,85 @@ img {vertical-align: middle;}
 }
 
 /* footer end */
+
+
+/* automatic image slider */
+
+/* {box-sizing: border-box;} */
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.hiw-auto-slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.hiwtext {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 80%;
+  
+ 
+  
+}
+
+.hiw-mySlides>img{
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+
+/* The dots/bullets/indicators */
+.hiwdot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #01bfbd;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.supportButton{
+    width: 150px;
+    height: 50px;
+    background-color: #01bfbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+.supportButton h4{
+    color: white;
+}
